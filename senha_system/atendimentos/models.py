@@ -22,7 +22,7 @@ class Atendimento(models.Model):
     ('Fátima', 'Fátima'),
     ('Fernando', 'Fernando'),
     ('Jane', 'Jane'),
-    ('Ana Paula', 'Ana Paula'),
+    ('Sharon', 'Sharon'),
     ]
 
     atendente = models.CharField(max_length=100,choices=ATENDENTES,null=True,blank=True)
