@@ -5,6 +5,7 @@ class Senha(models.Model):
     STATUS = (
         ("espera", "Em Espera"),
         ("chamando", "Chamando"),
+        ("chamando_novamente", "Chamando_Novamente"),
         ("atendimento", "Em Atendimento"),
         ("finalizado", "Finalizado"),
     )
