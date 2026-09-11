@@ -3,7 +3,6 @@ name: CI - Sistema de Guichê
 on:
   push:
     branches:
-      - main
       - release/**
   pull_request:
     branches:
