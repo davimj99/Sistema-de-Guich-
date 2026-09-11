@@ -8,6 +8,7 @@
     <title>Página não encontrada</title>
 
     <link rel="stylesheet" href="{% static 'css/404.css' %}">
+    <link rel="icon" href="{% static 'imagens/iscon2.png' %}" type="image/png">
     <script src="{% static 'js/404.js' %}"></script>
 </head>
 <body>
@@ -17,24 +18,25 @@
 
     <div class="logo">
         <img src="{% static 'imagens/iscon2.png' %}" alt="Logo ISCON">
-        <span> Faculdade ISCON</span>
+        <span> Faculdade ISCON <br></span>
     </div>
 
     <div class="container">
 
-        <h1>404</h1>
+        <h1><span>404</span>⚠️</h1>
+        
 
-        <h2>Página não encontrada</h2>
+        <h2><span>Acesso Negado 🚫</span> </h2>
 
         <p>
-            Acesso aqui negado! <br>
+
             Você não tem permissão para acessar esta página. <br>
             Por favor, entre em contato com o administrador do sistema.
         </p>
 
         <a href="/filas/tv/">
             <span class="btn">
-               TV Do Guichê Aqui
+               TV Do Guichê <br>Clique Aqui
             </span>
         </a>
 
@@ -43,7 +45,7 @@
     <footer>
         &copy; <span id="ano"></span> Tecnologia
         <span>ISCON</span>. Todos os direitos reservados.<br>
-        Desenvolvido por Davi Souza
+        Desenvolvido por <span>Davi Souza</span>
     </footer>
 
     <script>
