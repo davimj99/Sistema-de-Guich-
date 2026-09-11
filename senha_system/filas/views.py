@@ -67,7 +67,7 @@ def gerar_senha_preferencial(request):
 # =========================
 # TELA DO GUICHÊ
 # =========================
-# @login_required
+@login_required
 def tela_guiche(request, guiche_id):
     guiche = get_object_or_404(
         Guiche,
@@ -104,7 +104,7 @@ def tela_guiche(request, guiche_id):
 # =========================
 # CHAMAR PRÓXIMA SENHA
 # =========================
-# @login_required
+@login_required
 @require_POST
 def chamar_proxima(request, guiche_id):
     guiche = get_object_or_404(

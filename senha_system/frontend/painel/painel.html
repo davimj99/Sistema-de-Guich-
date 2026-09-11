@@ -60,8 +60,10 @@
 {% block extra_js %}
 
 <script>
-/* let ultimaChamada = null;
+// Controla se já animamos/tratamos essa chamada, mesmo com o áudio desativado.
+let ultimaChamada = null;
 
+/* Áudio desativado por enquanto.
 function falarSenha(senha, guiche) {
     speechSynthesis.cancel();
 
@@ -79,7 +81,8 @@ function falarSenha(senha, guiche) {
 
     setTimeout(falar, 3000);
     setTimeout(falar, 6000);
-} */
+}
+*/
 
 function atualizarPainel() {
     fetch("/painel/dados/?t=" + Date.now(), {
@@ -107,7 +110,9 @@ function atualizarPainel() {
                 void senhaEl.offsetWidth;
                 senhaEl.classList.add("destaque");
 
-                falarSenha(senha, guiche);
+                // Áudio desativado por enquanto — descomente a função acima
+                // e a linha abaixo para reativar o anúncio por voz.
+                // falarSenha(senha, guiche);
 
                 ultimaChamada = chamadaId;
             }
